@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Content of Game</title>
+	<meta name="Author" content="Leangsiv and Vuthea">
+	<meta name="Description" content="content of content, cover">
+	<meta name="Keyword" content="content , game">
+	
+	<style type="text/css">
+		
+		#body{	
+			background-color: lightblue; /* fallback color */
+			background-image: url("Content/bg.jpg");
+			background-size: cover;
+		}
+
+		@font-face{
+    		font-family: lazyFont; src: url(Content/lazyFont.ttf);
+		}
+		@font-face{
+			font-family: briskFont; src: url(Content/Brisk-Pro.otf);
+		}
+
+		#top{
+			width: auto;
+			height: auto;
+			display: -webkit-flex; /* Safari */
+			-webkit-justify-content: center; /* Safari 6.1+ */
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			
+		}
+
+		#niptict{
+			filter: brightness(150%);
+			width: 20%;
+			height: 12%;
+		}
+
+
+		.title{
+		    font: bolder 12vw 'Alfa Slab One';
+		    text-align: center;
+		    margin: 0;
+		    text-shadow: 1px 1px 2px;
+		    background: url("Content/pen.gif") center;
+		    background-color: white;
+		    background-size: contain;
+		    margin: auto;
+		    width: 100vw;
+		    background-clip: text;
+		    -webkit-background-clip: text;
+		    color: transparent;
+		    font-family: lazyfont;
+		    font-weight: bolder;
+		    filter: brightness(150%);
+			align-items: center;
+			padding-top: 70px;
+
+		}
+
+		.welcome{
+			position: absolute;
+			width: 53%;
+			height: 26%;
+			padding-top: 300px;
+			filter: brightness(112%);
+			margin-left: 15px;
+		}
+
+		#game1{
+			margin-top: 90px;
+			margin-left: 29px;
+			font-family: briskFont;
+			font-size: 60px;
+			font-weight: bold;
+			border: 2px solid blue;
+			border-radius: 10px;
+			padding: 35px;
+			padding-bottom: 5px;
+			background-image: url(Content/handPrint.jpg);
+			color: #790263de;
+			font-weight: bolder;
+			/* animation of border */
+			-webkit-animation-name:change; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+			animation-name: change;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			filter: brightness(100%);
+
+		}
+
+		#descripton{
+			margin-top: -12px;
+			margin-left: 38px;
+			font-family: briskFont;
+			font-size: 32px;
+			border: 2px solid white;
+			border-radius: 10px;
+			padding: 25px;
+			padding-bottom: 10px;
+			background-image: url(Content/warrior.jpg);
+			color: #383c39;
+			font-weight: bolder;
+			/* animation of border */
+			-webkit-animation-name:change; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+			animation-name: change;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+
+		}
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes change {
+		  0%   {border-color:tomato;}
+		  25%  {border-color:orange;}
+		  50%  {border-color:dodgerblue;}
+		  75%  {border-color:lightgreen;}
+		  100% {border-color:pink;}
+		}
+
+		/* Standard syntax */
+		@keyframes change {
+		  0%   {border-color:tomato;}
+		  25%  {border-color:orange; }
+		  50%  {border-color:dodgerblue; }
+		  75%  {border-color:lightgreen;}
+		  100% {border-color:pink; }
+		}
+		/* ---------------------- */
+
+		#mario{
+			position: absolute;
+			padding-top: 354px;
+			padding-left: 60px;
+		}
+
+		#sName{
+			width: 23%;
+			height: 17%;
+			margin-top: -19px;
+			filter: brightness(105%);
+		}
+	</style>
+</head>
+<body id="body">
+	<div id="top">
+		<img id="niptict" src="Content/niptict.png">
+		<img id="sName" src="Content/sName.png">
+	</div>
+	<div style="display: flex; flex-direction: column; align-items: center; position: absolute;">
+		<p class="title">CS-GaMe</p>
+		<img class="welcome" src="Content/welcome.png">
+		<a style="text-decoration: none;" href="memoryGame.html" target="_self"><p id="game1">Memory Game</p></a>
+		<a style="text-decoration: none;" href="description.html" target="_self"><p id="descripton">Description of Game</p></a>
+		
+	</div>
+
+	<img id="mario" src="Content/mario.gif">
+	
+</body>
+</html>

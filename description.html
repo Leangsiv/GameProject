@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Description of Memory Game</title>
+	<meta name="Author" content="Leangsiv and Vuthea">
+	<meta name="Description" content="Description of Memory Game">
+	<meta name="Keyword" content="Description">
+
+	<style type="text/css">
+
+		body{
+			background-image: url("DescriptionOfGame/colorfulBG.jpg");
+		}
+
+		@font-face{
+			font-family: lena;
+			src: url("DescriptionOfGame/Lena.ttf");
+		}
+
+		#backward{
+			filter: brightness(90%);
+			padding-left: 15px;
+			padding-top: 10px;
+			width: 170px;
+			height: 100px;
+		}
+		
+		.background{
+			position: absolute;
+			top: 62%;
+			left: 53%;
+			transform: translateX(-50%) translateY(-50%);
+			align-items: center;
+			text-align: center;
+			align-self: center;
+			background-color: #c55252;
+			padding: 10px;
+			border-radius: 15px;
+			border: 10px solid #147260ba;
+			width: auto;
+		}
+
+		#detail{
+			background-color: white;
+			border-radius: 10px;
+			max-height: 550px;
+			max-width: 800px;
+			text-align: left;
+			border: 2px solid red;
+			font-size: 1.4vw;
+			padding: 9px;
+			font-family: lena;
+			text-align: justify;
+			text-justify: inter-word;
+			/* animation of border */
+			-webkit-animation-name:change; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+			animation-name: change;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes change {
+			0%   {border-color:tomato;}
+			25%  {border-color:orange;}
+			50%  {border-color:dodgerblue;}
+			75%  {border-color:lightgreen;}
+			100% {border-color:pink;}
+		}
+
+		/* Standard syntax */
+		@keyframes change {
+			0%   {border-color:tomato;}
+			25%  {border-color:orange; }
+			50%  {border-color:dodgerblue; }
+			75%  {border-color:lightgreen;}
+			100% {border-color:pink; }
+		}
+		/* ---------------------- */
+
+		#title{
+			position: absolute;
+			font-size: 90px;
+			color: #e91e63d9;
+			background-image: url(DescriptionOfGame/testClip.png);
+			background-size: cover;
+			text-decoration: underline;
+			font-weight: bolder;
+			font-family: fantasy;
+			left: 33%;
+			top: -78px;
+			padding-left: 50px;
+			padding-right: 60px;
+			padding-top: 39px;
+			padding-bottom: 4px;
+			border-radius: 9px;
+			border-bottom: 2px solid #d8bc94;
+		}
+	</style>
+</head>
+
+<body>
+		<a href="content.html" target="_self">
+			<img src="DescriptionOfGame/backward.png" id="backward">
+		</a>
+		<p id="title">Description</p>
+
+		<div class="background">		
+			<div id="detail">
+				Matching games are games that require players to match similar elements. As the name implies, participants need to find a match for a word, picture, or card. For example, students place 12 picture of cards; composed of 6 pairs, face down in random order. A player turns over two cards at a time, with the goal of turning over a matching pair, by using their memory. This is also known as the <b>Pelmanism principle</b>, after Christopher Louis Pelman, a British psychologist of the first half of the 20th century.
+				<br><br>
+				Mostly younger players are often able to compete with older players because they can be very good at memory-based games.
+				<ol start="1">
+					<li> The objective is to collect the <b>6</b> pairs of cards.</li>
+					<li> The game automatically shuffle the cards and face down, in rows with the name "<i>NIPTICT</i>".</li>
+					<li> Play then continues in a clockwise direction(Optional).</li>
+					<li> The trick is to remember which cards are where.</li>
+					<li> A player turns over any two cards (one at a time) and the computer will check them if the cards match</li>
+					<li> When a player turns over two cards that do not match, those cards are turned face down again automatically(in the same position).</li>
+					<li> If a player successfully match a pair they will receive alert of message that provided by game to show how many flips that the player has been flipped.</li>
+				</ol>
+			</div> 
+		</div>
+</body>
+</html>
